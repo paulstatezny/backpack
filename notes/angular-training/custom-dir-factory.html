@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+
+      </div>
+    </div>
+
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function(myLogger) {
+          myLogger('Hey, this is TOTALLY unnecessary code. Might as well have just typed console.log');
+        })
+        .factory('myLogger', function() {
+          return function(message) {
+            console.log(message);
+          };
+        });
+    </script>
+  </body>
+</html>

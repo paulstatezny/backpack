@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+    <style>
+        input.ng-invalid { border: 3px solid red; }
+    </style>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+        <form name="contactForm">
+            <input ng-model="person.firstName" name="personFirstName" simple-required>
+        </form>
+      </div>
+    </div>
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function($scope) {
+          $scope.person = {
+            firstName: 'Paul'
+          };
+        })
+        .directive('simpleRequired', function() {
+          return {
+            require: 'ngModel',
+            scope:{},
+            link: function(scope, element, attrs, ngModelController) {
+
+              function validate(value) {
+                  var isValid = value != null && String(value).length > 0;
+                  ngModelController.$setValidity('simple-required', isValid);
+                  return value;
+              }
+
+              ngModelController.$parsers.push(validate);
+              ngModelController.$formatters.push(validate);
+            }
+          };
+        })
+    </script>
+  </body>
+</html>

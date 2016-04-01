@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+        <div compile-exercise>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function() {
+        })
+        .directive('compileExercise', function($compile) {
+          return {
+            link: function(scope, element, attrs) {
+              var template = '<span>{{message}}</span>';
+              var linkingFn = $compile(template);
+              var domElements = linkingFn(scope);
+              scope.message = 'It worked!';
+              element.append(domElements);
+            }
+          };
+        })
+    </script>
+  </body>
+</html>

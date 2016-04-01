@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Some Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+
+    <style>
+      .block-label {
+        display: block;
+      }
+
+      input.ng-invalid.ng-touched {
+        border: 2px solid red;
+        background-color: oldlace;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div ng-app="MyApp">
+      <div ng-controller="MyCtrl">
+        <form ng-submit="handleSubmit()" novalidate name="personForm">
+          <label class="block-label">
+            First name:
+            <input name="firstName" ng-model="person.firstName" required>
+            <span ng-show="personForm.firstName.$invalid && personForm.firstName.$touched">You do have a first name, don't you?</span>
+          </label>
+          <label class="block-label">
+            Last name:
+            <input name="lastName" ng-model="person.lastName" required>
+            <span ng-show="personForm.lastName.$invalid && personForm.lastName.$touched">Last name, surname, family name... does that help?</span>
+          </label>
+          <label class="block-label">
+            Age:
+            <input type="number" name="age" ng-model="person.age" required>
+            <span ng-show="personForm.age.$invalid && personForm.age.$touched">It's okay, I won't tell anyone</span>
+          </label>
+          <label class="block-label">
+            Email:
+            <input type="email" name="email" ng-model="person.email" required>
+            <span ng-show="personForm.email.$invalid && personForm.email.$touched">Promise, we won't sell your information or spam you</span>
+          </label>
+          <div>
+            <fieldset>
+              <legend>Choice Hotel Brand</legend>
+              <div>
+                <label>
+                  Rodeway Inn
+                  <input ng-model="person.hotelBrand" name="personHotelBrand"
+                    value="Rodeway Inn" type="radio">
+                </label>
+              </div>
+              <div>
+                <label>
+                  Econo Lodge
+                  <input ng-model="person.hotelBrand" name="personHotelBrand"
+                    value="Econo Lodge" type="radio">
+                </label>
+              </div>
+              <div>
+                <label>
+                  Quality Inn
+                  <input ng-model="person.hotelBrand" name="personHotelBrand"
+                    value="Quality Inn" type="radio">
+                </label>
+              </div>
+              <div>
+                <label>
+                  Sleep Inn
+                  <input ng-model="person.hotelBrand" name="personHotelBrand"
+                    value="Sleep Inn" type="radio">
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div>
+              <label>Loyalty Status:
+                <select ng-model="person.loyaltyStatus" name="personLoyaltyStatus"
+                  ng-options="loyaltyStatus.code as loyaltyStatus.caption
+                    group by loyaltyStatus.category for loyaltyStatus in loyaltyStatuses">
+                  <option value="">Select One...</option>
+              </label>
+          </div>
+
+          <div>
+            <label>Comments:
+              <textarea ng-model="person.comments" rows="5" cols="40" name="personComments"></textarea>
+            </label>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      angular.module('MyApp', [])
+        .controller('MyCtrl', function($scope) {
+          $scope.person = {};
+
+          $scope.loyaltyStatuses = [
+            {code: 'silver', caption: 'Silver', category: 'Special'},
+            {code: 'gold', caption: 'Gold', category: 'Special'},
+            {code: 'platinum', caption: 'Platinum', category: 'Elite'},
+            {code: 'diamond', caption: 'Diamond', category: 'Elite'},
+            {code: 'triple-diamond', caption: 'Triple Diamond', category: 'Hydro-Platynum Super Duper Black'},
+            {code: 'gold-silver-platinum-diamond-hydro', caption: 'Gold Silver Platinum Diamond Hydro', category: 'Hydro-Platynum Super Duper Black'}
+          ];
+
+          $scope.handleSubmit = function() {
+            console.log($scope.person);
+          };
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+        <tabs>
+          <tab id="tab1" caption="Tab 1">Tab 1 Content</tab>
+          <tab id="tab2" caption="Tab 2">Tab 2 Content</tab>
+          <tab id="tab3" caption="Tab 3">Tab 3 Content</tab>
+          <tab id="tab4" caption="Tab 4">Tab 4 Content</tab>
+        </tabs>
+      </div>
+    </div>
+
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function() {
+        })
+        .directive('tabs', function($compile) {
+          return {
+            restrict: 'E',
+            controller: function($scope, $element, $attrs) {
+              $scope.tabs = [];
+              $scope.activeTabId = 'tab1';
+
+              this.addTab = function(id, caption, content) {
+                $scope.tabs.push({
+                  id: id,
+                  caption: caption,
+                  content: content
+                });
+              };
+            },
+            link: function(scope, element, attrs) {
+              scope.activateTab = function(id) {
+                scope.activeTabId = id;
+              };
+
+              var template = `
+                <div class="tabs">
+                  <ul>
+                    <li ng-repeat="tab in tabs">
+                      <a ng-click="activateTab(tab.id)">{{tab.caption}}</a>
+                    </li>
+                  </ul>
+                  <div ng-repeat="tab in tabs" ng-if="activeTabId === tab.id">
+                    {{tab.content}}
+                  </div>
+                </div>
+              `;
+
+              var linkingFn = $compile(template);
+              var domElements = linkingFn(scope);
+              element.replaceWith(domElements);
+            }
+          }
+        })
+        .directive('tab', function() {
+          return {
+            restrict: 'E',
+            require: '^^tabs',
+            link: function(scope, element, attrs, tabsController) {
+              tabsController.addTab(attrs.id, attrs.caption, element.html());
+            }
+          };
+        });
+    </script>
+  </body>
+</html>

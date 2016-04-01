@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+
+      </div>
+    </div>
+
+    <script>
+      var LOGGER_PREFIX = 'COW MOO: ';
+
+      angular.module('App', [])
+        .controller('Ctrl', function(myLogger, $log) {
+          $log.debug('This message is logged via $log service');
+          myLogger('This is logged via myLogger');
+        })
+        .provider('myLogger', function() {
+          var prefix = '';
+
+          return {
+            $get: function() {
+              return function(message) {
+                console.log(prefix + message);
+              };
+            },
+            setPrefix: function(newPrefix) {
+              prefix = newPrefix;
+            }
+          };
+        })
+        .config(function(myLoggerProvider, $provide) {
+          myLoggerProvider.setPrefix(LOGGER_PREFIX);
+          $provide.decorator('$log', function($delegate) {
+            var decoratedLog = {};
+
+            ['log', 'info', 'warn', 'error', 'debug'].forEach(function(method) {
+              decoratedLog[method] = function(message) {
+                $delegate[method](LOGGER_PREFIX + message);
+              };
+            });
+
+            return decoratedLog;
+          });
+        });
+    </script>
+  </body>
+</html>

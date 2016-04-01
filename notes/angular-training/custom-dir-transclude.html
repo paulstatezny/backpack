@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div controller="Ctrl">
+        <div transclude-exercise>
+          <div>{{originalMessage}}</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function() {
+
+        })
+        .directive('transcludeExercise', function() {
+          return {
+            transclude: true,
+            template: '<div>{{newMessage}}</div>',
+            link: function(scope, element, attrs, ctrl, transclude) {
+              scope.originalMessage = 'This was shown first LOL!!!';
+              scope.newMessage = 'This wiped away the happy original message :-(';
+
+              function appendTranscludedContent(clone) {
+                element.append(clone);
+              }
+
+              transclude(appendTranscludedContent);
+              transclude(appendTranscludedContent);
+              transclude(appendTranscludedContent);
+              transclude(appendTranscludedContent);
+            }
+          };
+        });
+    </script>
+  </body>
+</html>

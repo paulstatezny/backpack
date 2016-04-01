@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+        <span ng-click="cancelIncrementation()">Current Value: {{currentValue}}</span>
+        <div observe-exercise="{{currentValue}}"></div>
+      </div>
+    </div>
+
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function($scope, $interval) {
+          $scope.currentValue = 0;
+
+          var intervalPromise = $interval(function() {
+            $scope.currentValue++;
+
+            if ($scope.currentValue > 9) {
+              $interval.cancel(intervalPromise);
+            }
+          }, 500);
+        })
+        .directive('observeExercise', function() {
+          return {
+            template: 'Observe value: {{observeValue}}',
+            scope: {
+              theValue: '@observeExercise'
+            },
+            link: function(scope, element, attrs) {
+              attrs.$observe('observeExercise', function(value) {
+                scope.observeValue = value;
+              });
+            }
+          };
+        })
+    </script>
+  </body>
+</html>

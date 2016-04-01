@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Some Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="MyApp">
+      <div ng-controller="MyCtrl">
+        <ul>
+          <li ng-repeat="food in (foods | chMinLength:10)">
+            {{food}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      angular.module('MyApp', [])
+        .filter('chMinLength', function() {
+          return {
+            compile: function(tElement, tAttrs) {
+              function(strings, maxLength) {
+                return strings.filter(function(str) {
+                  return str.length >= maxLength;
+                });
+              };
+            }
+          };
+        })
+        .controller('MyCtrl', function($scope) {
+          $scope.foods = [
+            'Sushi',
+            'Bratwurst',
+            'Hot Beer Sausage',
+            'Frosted Lemonade from Chick Fil A',
+            'Thai Curry',
+            'Steak',
+            'A good burger',
+            'Shrimp',
+            'Tuxedo cake',
+            'Panda Express'
+          ];
+        });
+    </script>
+  </body>
+</html>

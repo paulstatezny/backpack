@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="MyApp">
+      <div ng-controller="MyCtrl">
+        <my-dir></my-dir>
+      </div>
+    </div>
+
+    <script>
+      angular.module('MyApp', [])
+        .controller('MyCtrl', function() {
+
+        })
+        .directive('myDir', function() {
+          return {
+            templateUrl: 'directive-sample-template.html',
+            link: function(scope, element, attrs) {
+              scope.message = 'Hi class!';
+              scope.colors = ['red', 'white', 'blue'];
+            }
+          };
+        })
+    </script>
+  </body>
+</html>

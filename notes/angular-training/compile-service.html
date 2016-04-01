@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+        <div my-dir>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function() {
+        })
+        .directive('myDir', function($compile) {
+          return {
+            link: function(scope, element, attrs) {
+              var template = '<span>{{message}}</span>';
+              var linkingFn = $compile(template);
+              var domElements = linkingFn(scope);
+              element.append(domElements);
+              scope.message = 'FOOO!!! HAHAHA';
+              console.log('foo');
+            }
+          };
+        });
+    </script>
+  </body>
+</html>

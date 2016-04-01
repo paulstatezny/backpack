@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Some Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="MyApp">
+      <div ng-controller="MyCtrl">
+        {{message | chEllipsis: 12}}
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      angular.module('MyApp', [])
+        .filter('chEllipsis', function() {
+          return function(value, maxLength) {
+            if (value.length <= maxLength) {
+              return value;
+            }
+
+            return String(value).substr(0, maxLength) + '...';
+          };
+        })
+        .controller('MyCtrl', function($scope) {
+          $scope.message = 'Also Rob loves the safety dance!';
+        });
+    </script>
+  </body>
+</html>

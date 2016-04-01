@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="App">
+      <div ng-controller="Ctrl">
+        <div template-exercise>
+          <span>{{originalMessage}}</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      angular.module('App', [])
+        .controller('Ctrl', function() {
+        })
+        .directive('templateExercise', function() {
+          return {
+            templateUrl: 'template.html',
+            link: function(scope, element, attrs) {
+              scope.originalMessage = 'Original content';
+              scope.newMessage = 'New content';
+            }
+          };
+        });
+    </script>
+  </body>
+</html>
