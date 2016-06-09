@@ -28,7 +28,7 @@ Most of ADA compliance is just good HTML.
  - <a> tags take the user somewhere.
  - <button> tags perform an action.
  - <div> and <span> tags *aren't clickable*, so don't use them for buttons!
- - Don't haphazardly use h tags (<h1>, <h2>, etc) -- if it's not really a heading, don't put it in an h tag.
+ - Don't haphazardly use h tags (h1, h2, etc) -- if it's not really a heading, don't put it in an h tag.
  - `id` attributes -- these are unique!11!1!
  - <label for="foo-bar"> -- `for` specified the `id` of an <input> element.
 
