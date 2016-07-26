@@ -34,10 +34,10 @@ Most of ADA compliance is just good HTML.
 
 # WCAG Spec
 
-Perceivable
-Operable
-Understandable
-Robust
+ - Perceivable
+ - Operable
+ - Understandable
+ - Robust
 
 ## Perceivable
 
