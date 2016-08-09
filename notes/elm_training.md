@@ -19,3 +19,19 @@ All html element functions are functions that take 2 arguments:
 ## Function bodies
 
 Function bodies must be indented if put on a different line
+
+## ADTs
+
+Algebraic Data Types
+
+```
+type Msg
+  = NoOp
+  | OnUserClick
+```
+
+`Msg` is a type constructor ("type"). `NoOp` and `OnUserClick` are **data constructors** of type `Msg`. This is kind of like enums. But they take a payload.
+
+## ML Languages
+
+Elm is part of the family of ML languages. Along with Haskell and PureScript. You should program around **types**.
