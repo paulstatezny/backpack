@@ -7,5 +7,5 @@ else
   ARG="*$1*"
 fi
 
-git add $ARG
+git add "$ARG"
 git status

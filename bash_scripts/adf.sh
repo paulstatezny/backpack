@@ -7,5 +7,5 @@ else
   ARG="."
 fi
 
-git add $ARG -A
+git add "$ARG"
 git diff --cached
