@@ -93,3 +93,18 @@ Having youth around is helpful.
 *Advice for young students on how to learn effectively?*
 
 Success isn't about being smart. It's about being passionate and persistent.
+
+## Chunking
+
+Chunks are
+
+The first step to learning something is to start creating conceptual chunks -- mental leaps that unite scattered bits of information through meaning.
+
+Chunk:
+ - pieces of information that are bound together through use.
+ - A network of neurons that are used to firing together, so you can think a thought or perform an action smoothly and effectively.
+
+### How to Create Chunks
+
+Practice and repetition.
+Small chunks become larger over time.
