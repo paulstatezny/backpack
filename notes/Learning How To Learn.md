@@ -3,6 +3,11 @@
 Free course on Coursera with Dr. Barbara Oakley, Professor of Engineering, Industrial & Systems Engineering, Oakland University
 https://www.coursera.org/learn/learning-how-to-learn
 
+## Key Concepts
+
+1. Focused vs. Diffuse modes of thinking
+2. Chunking
+
 ## Lesson 1 - Focused versus Diffuse Thinking
 
 - **Focused thinking:** Concentrating intently on something to learn it
@@ -96,15 +101,43 @@ Success isn't about being smart. It's about being passionate and persistent.
 
 ## Chunking
 
-Chunks are
-
 The first step to learning something is to start creating conceptual chunks -- mental leaps that unite scattered bits of information through meaning.
 
 Chunk:
  - pieces of information that are bound together through use.
  - A network of neurons that are used to firing together, so you can think a thought or perform an action smoothly and effectively.
 
+Small chunks become larger over time.
+The point of chunks -- when you're sufficiently with something, you don't even have to think about it.
+When we chunk something, it takes 1 of the 4 slots in our brain instead of all 4.
+
 ### How to Create Chunks
 
-Practice and repetition.
-Small chunks become larger over time.
+1. Focused attention
+   (You can't gain understanding if you're distracted e.g. by music.)
+2. Understanding
+   (Not just being able to repeat instructed steps, but being able to see how things fit together.)
+3. Practice
+   (Looking at someone's painting doesn't mean you can paint yourself.)
+
+### Top Down and Bottom Up Learning
+
+Chunking is "bottom up"; Big Picture learning is "top down". Context is where the two meet.
+
+## Illusions of Competence
+
+### Importance of Recall
+
+After you read a book, look away and see what you can remember.
+When we retrieve information, we're not just being mindless robots. Retrieving information actually solidifies it!
+Recalling information in a different environment than the one in which you learned it can help solidify it.
+
+### Competence Illusions
+
+Understanding what someone else says or does can trick you into thinking the problem is ingrained in your mind as a "chunk".
+Highlighting text can give this illusion. But writing notes in the margin on the other hand can help.
+
+### Mini Testing + Value of Making Mistakes
+
+Testing yourself helps make sure you're not fooling yourself with "illusions of competence". Recall does this!
+Making mistakes in self-tests are valuable. They help you correct your thinking and thereby solidify the concept in your brain.
