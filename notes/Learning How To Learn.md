@@ -141,3 +141,37 @@ Highlighting text can give this illusion. But writing notes in the margin on the
 
 Testing yourself helps make sure you're not fooling yourself with "illusions of competence". Recall does this!
 Making mistakes in self-tests are valuable. They help you correct your thinking and thereby solidify the concept in your brain.
+
+# Procrastination and Memory
+
+Learning is achieved when you build understanding bit-by-bit, like a brick wall is made by brick-by-brick. You cannot "cram" understanding. Therefore, procrastination is a huge threat to learning.
+
+You can fight procrastination by building good habits. Habits are like zombies -- they're automatic, thoughtless processes. Habits can be good or bad.
+
+4 Parts of a Habit:
+1. The Cue (e.g. receiving a text)
+2. The Routine (How your respond to the cue, e.g. getting distracted from work)
+3. The Reward (The thing that releases "pleasure" feelings in the brain, e.g. moving your mind's focus away from difficult work)
+4. The Belief (e.g. "I can't avoid looking at texts when I receive them")
+
+Ways to build good habits and battle procrastination:
+ - Watch for procrastination cues, and challenge the beliefs behind them.
+ - "Eat your frogs first every day" (Do the unpleasant things on your to-do list first, to avoid procrastination)
+ - Delay rewards until you finish a task that you're tempted to procrastinate on.
+ - Keep a task list / planner journal so your "four tentacles" (of your "Octopus of Attention" -- representing your working memory slots) are not constantly having to juggle your todo list.
+
+## Product vs Process
+
+It's "products" (end goals) that tend to tempt us to procrastinate. (E.g. I need to finish this *homework assignment*, I need to be *ready for that presentation*, I need to *finish building the static UI*, I need to *lose 20 pounds*.)
+
+"Processes" (e.g. *spending time reading*, *doing research for a presentation*, *exercising*) don't tempt us to procrastinate as much. Focusing on processes makes it easier to build a habit. They allow us to do the unpleasant tasks that need to be done.
+
+For example, instead of focusing on "I need to lose 20 pounds", forget about that and focus on having a schedule of working out 4 times a week for 40 minutes each. Do that, and before you know it you've started losing weight.
+
+## Quitting Time
+
+Planning your quitting time is important! It can help you not procrastinate.
+
+## Procrastination and Willpower
+
+If you're going to use willpower to fight procrastination (you should!) it's only going to be effective if you fight it at one point -- your reaction to The Cue.
