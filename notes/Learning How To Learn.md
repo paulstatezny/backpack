@@ -14,8 +14,11 @@ https://www.coursera.org/learn/learning-how-to-learn
 - **Diffuse thinking:** "Relaxed" mode of thinking related to a set of neural resting states
 
 In order to learn something difficult, your mind needs to go back and forth between Focused and Diffuse mode.
+Metaphor and analogy are extremely powerful when trying to learn something new. (Try coming up with a metaphor for what you're learning.)
 
-Metaphor and analogy are extremely powerful when trying to learn something new.
+Focused mode allows you to do *sequential thinking*. Diffuse mode allows you to do more holistic thinking that jumps around ("intuition").
+
+> Most difficult problems and concepts are grasped through intuition (from Diffuse Mode) because these new ideas make a leap away from what you're familiar with.
 
 ### Focused vs Diffuse Mode Example: Thomas Edison and Salvador Dali
 
@@ -175,3 +178,17 @@ Planning your quitting time is important! It can help you not procrastinate.
 ## Procrastination and Willpower
 
 If you're going to use willpower to fight procrastination (you should!) it's only going to be effective if you fight it at one point -- your reaction to The Cue.
+
+## Overlearning
+
+Definition: Continuing to practice something after you've mastered it. (This can be helpful by providing an amount of "automaticity", but can create an illusion of competence. Instead, move on to the things you haven't mastered.)
+
+## Einstellung
+
+Definition: When old patterns of thought block you from exploring / accepting new patterns or ideas.
+
+## Interleaving
+
+Definition: Jumping back and forth between different problems or situations that require different techniques or strategies.
+
+Mix up your learning and it will expand your brain and draw out creativity.
