@@ -1,10 +1,10 @@
 #!/bin/bash
 
-NUMBER=`git symbolic-ref --short HEAD | tr '/' '\n' | tail -n1 | tr '-' '\n' | head -n1`
+CURRENT_BRANCH=`git symbolic-ref --short HEAD`
+REGEX='^([A-Z]+-[0-9]+)'
 
-re='^[0-9]+$'
-if ! [[ $NUMBER =~ $re ]] ; then
-  git commit -m "$1"
+if [[ $CURRENT_BRANCH =~ $REGEX ]] ; then
+  git commit -m "${BASH_REMATCH[1]} - $1"
 else
-  git commit -m "$1 (#$NUMBER)"
+  git commit -m "$1"
 fi
