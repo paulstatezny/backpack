@@ -5,6 +5,8 @@ set splitright
 set noswapfile
 set timeoutlen=250
 set ttimeoutlen=0
+set shiftwidth=2
+set tabstop=2
 
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -77,6 +79,8 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mileszs/ack.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'nikvdp/ejs-syntax'
 
 " Initialize plugin system
 call plug#end()
@@ -103,3 +107,6 @@ let g:NERDTreeHijackNetrw=0
 let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes
 
 set background=dark
+set listchars+=space:␣
+set list
+
