@@ -14,7 +14,9 @@ let mapleader=" "
 
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :set number!<CR>
+nnoremap <leader><Space> :set list!<CR>
+nnoremap <leader>o :set paste!<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -81,6 +83,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'nikvdp/ejs-syntax'
+Plug 'terryma/vim-multiple-cursors'
 
 " Initialize plugin system
 call plug#end()
@@ -108,5 +111,4 @@ let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes
 
 set background=dark
 set listchars+=space:␣
-set list
 
