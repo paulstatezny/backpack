@@ -7,5 +7,4 @@ then
   echo "Branch not found"
 else
   git checkout $BRANCH
-  git pull origin $BRANCH
 fi
