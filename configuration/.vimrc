@@ -71,11 +71,12 @@ Plug 'morhetz/gruvbox'
 Plug 'ElmCast/elm-vim'
 Plug 'ervandew/supertab'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
-Plug 'wycats/nerdtree'
+"Plug 'wycats/nerdtree'
 Plug 'raichoo/purescript-vim'
 Plug 'tpope/vim-endwise'
 Plug 'vim-airline/vim-airline'
@@ -103,12 +104,10 @@ let g:gruvbox_contrast_dark = "hard"
 let g:haskell_indent_disable = 1
 let g:ctrlp_custom_ignore = 'apps/server/doc\|node_modules$\|\.DS_Store$\|\.git$\|deps$\|elm-stuff$\|_build$'
 let g:airline#extensions#wordcount#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 let g:airline_extensions = ['ale', 'quickfix', 'tabline']
 let g:airline#extentions#tabline#left_sep = '|'
-let g:NERDTreeHijackNetrw=0
 let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes
 
 set background=dark
 set listchars+=space:␣
-
