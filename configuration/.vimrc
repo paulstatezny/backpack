@@ -59,19 +59,18 @@ aug CursorInsert
   au!
   autocmd InsertLeave * setlocal nocursorline
   autocmd InsertEnter * setlocal cursorline
-  autocmd InsertLeave * highlight CursorLine ctermbg=None ctermfg=None term=None cterm=None gui=None
-  autocmd InsertEnter * highlight CursorLine ctermbg=darkgray ctermfg=None term=None cterm=None gui=None
 aug END
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'elixir-lang/vim-elixir'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'leafgarland/typescript-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'ElmCast/elm-vim'
 Plug 'ervandew/supertab'
 Plug 'neovimhaskell/haskell-vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-surround'
@@ -110,4 +109,9 @@ let g:airline#extentions#tabline#left_sep = '|'
 let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes
 
 set background=dark
-set listchars+=space:␣
+set listchars+=space:·
+set list
+"set listchars+=space:␣
+
+autocmd BufNewFile,BufRead * call matchadd('SpecialKey', '\s\+')
+autocmd BufNewFile,BufRead * call matchadd('NonText', '\n\+')
