@@ -63,10 +63,11 @@ aug END
 
 call plug#begin('~/.vim/plugged')
 
+"Plug 'mhinz/vim-mix-format'
 Plug 'elixir-lang/vim-elixir'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'leafgarland/typescript-vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'ElmCast/elm-vim'
 Plug 'ervandew/supertab'
@@ -101,12 +102,14 @@ colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
 
 let g:haskell_indent_disable = 1
-let g:ctrlp_custom_ignore = 'apps/server/doc\|node_modules$\|\.DS_Store$\|\.git$\|deps$\|elm-stuff$\|_build$'
+let g:ctrlp_custom_ignore = 'apps/server/doc\|node_modules$\|\.DS_Store$\|\.git$\|deps$\|elm-stuff$\|_build\|doc$'
 let g:airline#extensions#wordcount#enabled = 1
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_extensions = ['ale', 'quickfix', 'tabline']
 let g:airline#extentions#tabline#left_sep = '|'
 let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes
+"let g:mix_format_on_save = 1
+"let g:mix_format_silent_errors = 1
 
 set background=dark
 set listchars+=space:·
