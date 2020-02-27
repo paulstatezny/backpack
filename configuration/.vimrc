@@ -13,7 +13,6 @@ syntax on              " Turn on syntax highlighting
 filetype on            " Attempt to detect the type of file that's being edited
 filetype plugin on     " Load specific plugins based on the filetype
 filetype indent on     " Enable loading different indent files to different filetypes
-set background=dark    " Dark color scheme
 
 set backspace=indent,eol,start " Act more 'normal' about backpacking e.g. to backspace past start of edit
 
@@ -147,3 +146,4 @@ let g:airline#extentions#tabline#left_sep = '|'
 "let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes -- doesn't seem to work
 "let g:mix_format_on_save = 1
 "let g:mix_format_silent_errors = 1
+set background=dark    " Dark color scheme
