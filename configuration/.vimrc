@@ -9,7 +9,6 @@ set tabstop=2          " Tabs are 2 spaces wide
 set expandtab          " Hitting tab in insert mode will inject `tabstop` spaces
 set list               " Show whitespace
 set listchars+=space:· " Use the · character for spaces when showing whitespace
-syntax on              " Turn on syntax highlighting
 filetype on            " Attempt to detect the type of file that's being edited
 filetype plugin on     " Load specific plugins based on the filetype
 filetype indent on     " Enable loading different indent files to different filetypes
@@ -46,6 +45,9 @@ nnoremap <leader><Space> :set list!<CR>
 " Space+o to toggle paste mode
 nnoremap <leader>o :set paste!<CR>
 
+" Space+Tab to convert tabs to spaces
+nnoremap <leader><Tab> :set expandtab<CR>:retab<CR>
+
 " Navigating around splits with Ctrl + hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -72,6 +74,9 @@ nnoremap <leader>' :bd<CR>
 
 " List buffers
 nnoremap <leader>/ :ls<CR>
+
+" Open a buffer with the name you type next
+nnoremap <leader>f :buf<SPACE>
 
 " Add newline to current position
 nnoremap <leader>j i<CR><Esc>
@@ -129,16 +134,26 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'nikvdp/ejs-syntax'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'FelikZ/ctrlp-py-matcher'
+Plug 'paulstatezny/nofrils'
 
 " Initialize plugin system
 call plug#end()
 
-colorscheme gruvbox
+if $EINK == 'true'
+  " Tell vim we're running in a terminal that doesn't support colors
+  set t_Co=0
 
-let g:gruvbox_contrast_dark = "hard"
+  syntax reset             " Turn off syntax highlighting
+  syntax off             " Turn off syntax highlighting
+else
+  colorscheme gruvbox    " Use dark color theme
+  syntax on              " Turn on syntax highlighting
+  let g:gruvbox_contrast_dark = "hard"
+  set background=dark    " Dark color scheme
+endif
 
 let g:haskell_indent_disable = 1
-let g:ctrlp_custom_ignore = 'apps/server/doc\|node_modules$\|\.DS_Store$\|\.git$\|deps$\|elm-stuff$\|_build\|doc$'
+let g:ctrlp_custom_ignore = 'priv/static\|apps/server/doc\|node_modules$\|\.DS_Store$\|\.git$\|deps$\|ios/build$\|ios/Pods$\|elm-stuff$\|_build\|doc$\|^android/app/build$'
 let g:airline#extensions#wordcount#enabled = 1
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_extensions = ['ale', 'quickfix', 'tabline']
@@ -146,4 +161,3 @@ let g:airline#extentions#tabline#left_sep = '|'
 "let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes -- doesn't seem to work
 "let g:mix_format_on_save = 1
 "let g:mix_format_silent_errors = 1
-set background=dark    " Dark color scheme
