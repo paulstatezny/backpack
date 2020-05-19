@@ -164,3 +164,5 @@ let g:airline#extentions#tabline#left_sep = '|'
 "let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes -- doesn't seem to work
 "let g:mix_format_on_save = 1
 "let g:mix_format_silent_errors = 1
+
+command SaveVimrc ! cp ~/.vimrc ~/projects/backpack/configuration/.vimrc
