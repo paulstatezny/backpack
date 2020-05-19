@@ -145,18 +145,21 @@ if $EINK == 'true'
 
   syntax reset             " Turn off syntax highlighting
   syntax off             " Turn off syntax highlighting
+  set nolist             " Stop showing whitespace chars
 else
   colorscheme gruvbox    " Use dark color theme
   syntax on              " Turn on syntax highlighting
   let g:gruvbox_contrast_dark = "hard"
   set background=dark    " Dark color scheme
+  hi Normal ctermbg=16 guibg=#000000
+  hi LineNr ctermbg=16 guibg=#000000
 endif
 
 let g:haskell_indent_disable = 1
 let g:ctrlp_custom_ignore = 'priv/static\|apps/server/doc\|node_modules$\|\.DS_Store$\|\.git$\|deps$\|ios/build$\|ios/Pods$\|elm-stuff$\|_build\|doc$\|^android/app/build$'
 let g:airline#extensions#wordcount#enabled = 1
 "let g:airline#extensions#tabline#enabled = 1
-let g:airline_extensions = ['ale', 'quickfix', 'tabline']
+let g:airline_extensions = ['quickfix', 'tabline']
 let g:airline#extentions#tabline#left_sep = '|'
 "let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes -- doesn't seem to work
 "let g:mix_format_on_save = 1
