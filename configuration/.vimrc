@@ -151,8 +151,17 @@ else
   syntax on              " Turn on syntax highlighting
   let g:gruvbox_contrast_dark = "hard"
   set background=dark    " Dark color scheme
+
+  " Dark background
   hi Normal ctermbg=16 guibg=#000000
   hi LineNr ctermbg=16 guibg=#000000
+
+  " Dark whitespace characters
+  hi NonText ctermbg=16 ctermfg=236
+  hi SpecialKey ctermbg=16 ctermfg=236
+
+  " Dark current line
+  hi CursorLine ctermbg=235
 endif
 
 let g:haskell_indent_disable = 1
