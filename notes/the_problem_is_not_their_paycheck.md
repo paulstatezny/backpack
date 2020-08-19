@@ -22,3 +22,10 @@ Agency and freedom feel quite similar. The idea is that you are given the opport
 
 Competency and affirmation seem different in a nuanced way. Competency seemed to be referring to e.g. being good enough at a skill in order to have what it takes to attack a problem. (E.g. I'm competent as a programmer, therefore it helps me feel motivated to try hard at my software development job. Because I think I _can_ do a good job.) But in this book, the focus of the "affirmation" pillar seems to be the leader / manager affirming growth in the right direction of the employee. In other words, helping the employee to know that they're getting better at the right things, so that they themselves can feel that they're growing over the long term in the right direction.
 
+## Freedom chapter
+
+When you give employees more freedom, they respond not by taking advantage of you but by taking responsibility for their work. They need you less and less to get the job done.
+
+## Affirmation chapter
+
+> Three of the biggest poisons to a company culture: Uncertainty, lack of leadership, and lack of confidence.
