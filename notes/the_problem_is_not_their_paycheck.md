@@ -30,7 +30,8 @@ When you give employees more freedom, they respond not by taking advantage of yo
 
 > Three of the biggest poisons to a company culture: Uncertainty, lack of leadership, and lack of confidence.
 
-- Affirmation means telling the employee when they've done a good job, (positive affirmation,) but also when they've messed. (Course correcting them; negative affirmation.)
+- Affirmation means telling the employee when they've done a good job, (positive affirmation,) but also when they've messed up. (Course correcting them; negative affirmation.)
 - If it's awkward at first, start small. Write them a note.
-- You might not be a "touchy feeley" type of person, and you might be focused on making money. But employees who are affirmed perform at a higher level! So they will end up making you more money.
+- You might not be a "touchy feeley" type of person, and you might be focused on making money. But employees who are affirmed perform at a higher level! Because they're more confident. So they will end up making you more money.
 - People want to know if they're doing a good job, so give affirmations immediately, on the spot. Don't wait until e.g. a quarterly performance review.
+- Even if someone's not doing a great job, try to give 5 positive affirmations for every 1 negative affirmation. Phil Jackson (Bulls coach) says 5:1 is the magic ratio. Employees who hear a low positive:negative ratio will likely form a belief that they're just not good at their job.
