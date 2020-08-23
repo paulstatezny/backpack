@@ -46,3 +46,12 @@ When you give employees more freedom, they respond not by taking advantage of yo
     - He went through WW2 concentration camps and gave others the motivation to get through for a common purpose: survive so that they can tell the world about the atrocities, so that they hopefully would never happen again.
     - Passions change, they come and go. A common purpose focused on serving others is going to be longer lasting.
     - E.g. You don't have to be passionate about mortgages, you just have to buy into the purpose of loving people through finance.
+
+### How to Build a Purpose
+
+1. Identify the problem your customer has
+    - Determine the external, internal, and philosophical problem.
+    - The philosophical problem: What is fundamentally wrong with society? (This is something people can get behind fixing!)
+    - External problem: e.g. People need mortgages
+    - Internal problem: e.g. People are uncertain about their financial security
+    - Philosophical problem: e.g. People aren't loved through finance. (Example: Financial advisors trying to make money off of people instead of caring for them.)
