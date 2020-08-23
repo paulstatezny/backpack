@@ -59,6 +59,7 @@ Determine the external, internal, and philosophical problem.
     - e.g. People are uncertain about their financial security
 - The philosophical problem: What is fundamentally wrong with society?
     - Why is it _just plain wrong_ that people are dealing with these external/internal problems?
+    - How do those problems make our society and our world worse?
     - This creates emotion!
     - This is something people can get behind fixing!
     - Seeing a problem like this get solved creates a sense of belonging. And happiness and joy. People believe they're doing something worthwhile.
