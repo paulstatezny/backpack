@@ -35,3 +35,7 @@ When you give employees more freedom, they respond not by taking advantage of yo
 - You might not be a "touchy feeley" type of person, and you might be focused on making money. But employees who are affirmed perform at a higher level! Because they're more confident. So they will end up making you more money.
 - People want to know if they're doing a good job, so give affirmations immediately, on the spot. Don't wait until e.g. a quarterly performance review.
 - Even if someone's not doing a great job, try to give 5 positive affirmations for every 1 negative affirmation. Phil Jackson (Bulls coach) says 5:1 is the magic ratio. Employees who hear a low positive:negative ratio will likely form a belief that they're just not good at their job.
+
+## Purpose chapter
+
+- "The number one thing top talent is looking for is a company that makes the world a better place or provides a sense of meaning."
