@@ -41,3 +41,8 @@ When you give employees more freedom, they respond not by taking advantage of yo
 - "The number one thing top talent is looking for is a company that makes the world a better place or provides a sense of meaning."
 - To create an effective purpose, you have to be able to tie everything your business does back to a positive impact that's made on people.
     - E.g. Selling mortgages? This may give people an enormous debt, but it also gives the ability to have a place to call home. It allows them to build equity in owning property.
+- Passion is different from purpose.
+    - Freud said that people are driven by passions, but Viktor Frankl showed that people are more driven by purpose.
+    - He went through WW2 concentration camps and gave others the motivation to get through for a common purpose: survive so that they can tell the world about the atrocities, so that they hopefully would never happen again.
+    - Passions change, they come and go. A common purpose focused on serving others is going to be longer lasting.
+    - E.g. You don't have to be passionate about mortgages, you just have to buy into the purpose of loving people through finance.
