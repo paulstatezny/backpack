@@ -39,3 +39,4 @@ When you give employees more freedom, they respond not by taking advantage of yo
 ## Purpose chapter
 
 - "The number one thing top talent is looking for is a company that makes the world a better place or provides a sense of meaning."
+- To create an effective purpose, you have to be able to tie everything your business does back to a positive impact that's made on people.
