@@ -51,7 +51,10 @@ When you give employees more freedom, they respond not by taking advantage of yo
 
 1. Identify the problem your customer has
     - Determine the external, internal, and philosophical problem.
-    - The philosophical problem: What is fundamentally wrong with society? Why is it _just plain wrong_ that people are dealing with these external/internal problems? (This is something people can get behind fixing!)
+    - The philosophical problem: What is fundamentally wrong with society?
+        - Why is it _just plain wrong_ that people are dealing with these external/internal problems?
+        - This creates emotion!
+        - (This is something people can get behind fixing!)
     - External problem: e.g. People need mortgages
     - Internal problem: e.g. People are uncertain about their financial security
     - Philosophical problem: e.g. People aren't loved through finance. (Example: Financial advisors trying to make money off of people instead of caring for them.)
