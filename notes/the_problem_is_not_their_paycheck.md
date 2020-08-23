@@ -29,3 +29,7 @@ When you give employees more freedom, they respond not by taking advantage of yo
 ## Affirmation chapter
 
 > Three of the biggest poisons to a company culture: Uncertainty, lack of leadership, and lack of confidence.
+
+- Affirmation means telling the employee when they've done a good job, (positive affirmation,) but also when they've messed. (Course correcting them; negative affirmation.)
+- If it's awkward at first, start small. Write them a note.
+- You might not be a "touchy feeley" type of person, and you might be focused on making money. But employees who are affirmed perform at a higher level! So they will end up making you more money.
