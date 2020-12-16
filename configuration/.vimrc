@@ -1,7 +1,7 @@
 let mapleader=" "      " Setting the space key as my leader key 🎈
 set number             " Show line numbers
 set autoindent         " Automatically indent
-set noswapfile         " Don't put unsaved changes in a swap file
+"set noswapfile         " Don't put unsaved changes in a swap file
 set timeoutlen=200     " After the leader key, you have this many ms to finish a key combination
 set ttimeoutlen=0
 set shiftwidth=2       " Shifting text with << and >> will move it 2 spaces left or right
@@ -111,8 +111,7 @@ augroup END
 
 call plug#begin('~/.vim/plugged')
 
-"Plug 'mhinz/vim-mix-format'
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': ['elixir', 'eelixir'] }
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'leafgarland/typescript-vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -126,15 +125,18 @@ Plug 'tpope/vim-surround'
 "Plug 'airblade/vim-gitgutter' -- too slow :-(
 "Plug 'wycats/nerdtree'
 Plug 'raichoo/purescript-vim'
-Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise' " Add 'end' when you write 'do' in Ruby/Elixir
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'nikvdp/ejs-syntax'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'paulstatezny/nofrils'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'mhinz/vim-mix-format' " To run `mix format` on save
+let g:mix_format_on_save = 1
 
 " Initialize plugin system
 call plug#end()
@@ -170,6 +172,10 @@ let g:airline#extensions#wordcount#enabled = 1
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_extensions = ['quickfix', 'tabline']
 let g:airline#extentions#tabline#left_sep = '|'
+
+" Make .leex files seen as .eex files
+au BufEnter *.leex set filetype=eelixir
+
 "let g:gitgutter_diff_args = 'HEAD' " Highlight both staged and unstaged changes -- doesn't seem to work
 "let g:mix_format_on_save = 1
 "let g:mix_format_silent_errors = 1
