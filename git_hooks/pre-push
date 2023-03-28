@@ -1,0 +1,6 @@
+#!/bin/sh
+
+[[ -n $FORCE ]] || mix format --check-formatted || exit 1
+[[ -n $FORCE ]] || mix compile --warnings-as-errors || exit 1
+[[ -n $FORCE ]] || mix credo --all || exit 1
+#[[ -n $FORCE ]] || mix dialyzer || exit 1
